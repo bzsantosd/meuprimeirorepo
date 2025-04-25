@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações do Carro</title>
+    <script>
+        function exibirInformacoes() {
+            const modelo = document.getElementById("modelo").value;
+            let preco, ano, combustivel, servicos, valorServicos;
+
+            switch (modelo) {
+                case "Sedan":
+                    preco = "R$ 80.000";
+                    ano = "2020";
+                    combustivel = "Gasolina";
+                    servicos = "Troca de óleo, alinhamento";
+                    valorServicos = "R$ 500";
+                    break;
+                case "SUV":
+                    preco = "R$ 120.000";
+                    ano = "2021";
+                    combustivel = "Diesel";
+                    servicos = "Revisão completa, troca de pneus";
+                    valorServicos = "R$ 1.200";
+                    break;
+                case "Hatch":
+                    preco = "R$ 60.000";
+                    ano = "2019";
+                    combustivel = "Flex";
+                    servicos = "Troca de óleo, balanceamento";
+                    valorServicos = "R$ 300";
+                    break;
+                default:
+                    alert("Modelo não encontrado!");
+                    return;
+            }
+
+            document.getElementById("resultado").innerHTML = `
+                <h3>Informações do Carro</h3>
+                <p><strong>Modelo:</strong> ${modelo}</p>
+                <p><strong>Preço:</strong> ${preco}</p>
+                <p><strong>Ano de Fabricação:</strong> ${ano}</p>
+                <p><strong>Tipo de Combustível:</strong> ${combustivel}</p>
+                <h3>Relatório de Serviços</h3>
+                <p><strong>Serviços Realizados:</strong> ${servicos}</p>
+                <p><strong>Valor Total dos Serviços:</strong> ${valorServicos}</p>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <h1>Consulta de Informações do Carro</h1>
+    <label for="modelo">Escolha o modelo do carro:</label>
+    <select id="modelo">
+        <option value="Sedan">Sedan</option>
+        <option value="SUV">SUV</option>
+        <option value="Hatch">Hatch</option>
+    </select>
+    <button onclick="exibirInformacoes()">Consultar</button>
+    <div id="resultado"></div>
+</body>
+</html>

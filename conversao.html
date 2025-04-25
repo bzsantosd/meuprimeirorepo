@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversão de Moeda</title>
+</head>
+<body>
+    <h1>Conversor de Moeda</h1>
+    <button onclick="converter()">Converter</button>
+    <h2 id="resultado"></h2>
+
+    <script>
+        function converter() {
+            const valorReais = parseFloat(prompt('Digite o valor em Reais (R$):'));
+            const moeda = prompt('Escolha a moeda (dolar ou euro):').toLowerCase();
+            const taxa = parseFloat(prompt('Digite a taxa de câmbio:'));
+            let resultado = 0;
+
+            if (!valorReais || !taxa) {
+                document.getElementById('resultado').innerText = 'Por favor, insira valores válidos.';
+                return;
+            }
+
+            switch (moeda) {
+                case 'dolar':
+                    resultado = valorReais / taxa;
+                    document.getElementById('resultado').innerText = `O valor convertido é US$ ${resultado.toFixed(2)}`;
+                    break;
+                case 'euro':
+                    resultado = valorReais / taxa;
+                    document.getElementById('resultado').innerText = `O valor convertido é € ${resultado.toFixed(2)}`;
+                    break;
+                default:
+                    document.getElementById('resultado').innerText = 'Moeda inválida.';
+            }
+        }
+    </script>
+</body>
+</html>
