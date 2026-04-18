@@ -1,13 +1,13 @@
 # Meu Primeiro Repositório
 
-Bem-vindo ao meu primeiro repositório de estudos!
-Este projeto reúne diversos exercícios e aplicações práticas desenvolvidas em **HTML5**, focando na lógica de programação e estruturação web.
+Bem-vindo ao meu primeiro repositório!
+Onde reúne diversos exercícios e aplicações práticas desenvolvidas em **HTML5**, focando na lógica de programação e estruturação web.
 
 ---
 
 ## 📂 O que tem aqui?
 
-Este repositório contém uma coleção de mini-projetos independentes:
+Este repositório contém mini-projetos independentes:
 
 * **Calculadora:** Uma ferramenta para realizar operações matemáticas básicas.
 * **Conversão:** Aplicativo para conversão de valores ou unidades.
@@ -27,7 +27,7 @@ Este repositório contém uma coleção de mini-projetos independentes:
 
 ## 🚀 Como visualizar os projetos
 
-Como este é um repositório de arquivos estáticos, você pode:
+Como é um repositório de arquivos estáticos, você pode:
 
 1.  Fazer o download ou clonar este repositório.
 2.  Abrir o arquivo `index.html` em qualquer navegador (Chrome, Edge, Firefox).
