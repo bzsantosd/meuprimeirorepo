@@ -1,7 +1,7 @@
 # Meu Primeiro Repositório
 
 Bem-vindo ao meu primeiro repositório! <br> 
-Contém diversos exercícios e aplicações práticas desenvolvidas em **HTML5**, focando na lógica de programação e estruturação web.
+Reúne diversos exercícios e aplicações práticas desenvolvidas em **HTML5**, focando na lógica de programação e estruturação web.
 
 ---
 
